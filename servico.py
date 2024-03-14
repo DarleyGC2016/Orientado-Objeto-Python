@@ -1,5 +1,4 @@
 from validacao import Validacao
-
 class Servico:
     def showPrime(array):
         number = 0
@@ -8,13 +7,13 @@ class Servico:
         print('Number  Status')
         for i in range(0, array.size()):
            number = array.get(i)
-           qtdDivisivel = Validacao.validaPrimo(number, ePrimo, qtdDivisivel, array, i) 
-        #    for j in range(1, number + 1 ):
-        #        if number % j == 0:
-        #            ePrimo+= 1
-        #            qtdDivisivel = ePrimo
-        #        if j ==  array.get(i): 
-        #            ePrimo = 0
+           qtdDivisivel = Validacao.validaPrimo(
+                                                    number,
+                                                    ePrimo,
+                                                    qtdDivisivel,
+                                                    array,
+                                                    i
+                                                ) 
            if qtdDivisivel == 2:
                print(number, '      is prime')
            else:
