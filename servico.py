@@ -1,5 +1,6 @@
 from validacao import Validacao
 class Servico:
+    @staticmethod
     def showPrime(array):
         number = 0
         ePrimo = 0
