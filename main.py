@@ -13,7 +13,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 lista = Servico.verificaPrime(array)
 
-# Apresenta os números se são número primos ou não. 
+# Apresenta os números ordenados. Se são número primos ou não. 
 lista.sort('nro')
 Servico.showPrime(lista.list)
 
