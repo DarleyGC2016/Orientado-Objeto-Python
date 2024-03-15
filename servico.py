@@ -1,11 +1,13 @@
 from validacao import Validacao
+from myArray import MyArray
 class Servico:
     @staticmethod
-    def showPrime(array):
+    def verificaPrime(array):
         number = 0
         ePrimo = 0
         qtdDivisivel = 0
-        print('Number  Status')
+        listaNros = MyArray()
+
         for i in range(0, array.size()):
            number = array.get(i)
            qtdDivisivel = Validacao.validaPrimo(
@@ -16,6 +18,15 @@ class Servico:
                                                     i
                                                 ) 
            if qtdDivisivel == 2:
-               print(number, '      is prime')
+               listaNros.add({'nro': number, 'status': 'is prime'})
            else:
-               print(number, '      is not a prime')
+               listaNros.add({'nro': number, 'status': 'is not a prime'})
+        return listaNros
+
+    
+    @staticmethod
+    def showPrime(listaNros):
+        
+        print('Number  Status')
+        for lista in listaNros:
+            print(str(lista['nro']),'       ',lista['status'] )

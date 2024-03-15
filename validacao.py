@@ -1,6 +1,6 @@
 
 class Validacao:
-    
+    # @staticmethod é usado para funções estáticas
     @staticmethod
     def validaIntAdd(array):
         while True:

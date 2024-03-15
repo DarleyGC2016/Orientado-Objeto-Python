@@ -10,3 +10,7 @@ class MyArray:
     
     def get(self, pos) -> int:
         return self.list[pos]
+    
+    # Ordena pelo nome do atributo da lista usando essa lambda que está abaixo.
+    def sort(self, nomeAtributo) -> None:
+        self.list.sort(key=lambda number: number[nomeAtributo])
