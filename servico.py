@@ -2,7 +2,7 @@ from validacao import Validacao
 from myArray import MyArray
 class Servico:
     @staticmethod
-    def verificaPrime(array):
+    def verificaPrime(array) -> list:
         number = 0
         ePrimo = 0
         qtdDivisivel = 0
@@ -25,8 +25,7 @@ class Servico:
 
     
     @staticmethod
-    def showPrime(listaNros):
-        
+    def showPrime(listaNros):        
         print('Number  Status')
         for lista in listaNros:
             print(str(lista['nro']),'       ',lista['status'] )

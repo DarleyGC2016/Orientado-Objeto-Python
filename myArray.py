@@ -2,7 +2,7 @@ class MyArray:
     def __init__(self) -> None:
         self.list = []
 
-    def add(self, obj):
+    def add(self, obj) -> None:
         self.list.append(obj) 
     
     def size(self) -> int:
@@ -13,4 +13,4 @@ class MyArray:
     
     # Ordena pelo nome do atributo da lista usando essa lambda que está abaixo.
     def sort(self, nomeAtributo) -> None:
-        self.list.sort(key=lambda number: number[nomeAtributo])
+        self.list.sort(key=lambda obj: obj[nomeAtributo])

@@ -2,7 +2,7 @@
 class Validacao:
     # @staticmethod é usado para funções estáticas
     @staticmethod
-    def validaIntAdd(array):
+    def validaIntAdd(array) -> None:
         while True:
             number = int(input('Número: '))
             if (number <= 1):
