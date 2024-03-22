@@ -25,7 +25,7 @@ class Servico:
 
     
     @staticmethod
-    def showPrime(listaNros):        
+    def showPrime(listaNros) -> None:        
         print('Number  Status')
         for lista in listaNros:
             print(str(lista['nro']),'       ',lista['status'] )
